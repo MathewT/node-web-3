@@ -24,6 +24,6 @@ RUN npm install
 COPY gulpfile.js .
 
 
-EXPOSE 8080
+EXPOSE 8585
 
 CMD [ "npm", "start" ]

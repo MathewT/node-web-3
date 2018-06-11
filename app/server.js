@@ -7,7 +7,7 @@ const _ = require('lodash');
 const express = require('express');
 
 // Constants
-const PORT = 8080;
+const PORT = process.env.PORT || 8585;
 const HOST = '0.0.0.0';
 
 const logo = '\
@@ -34,5 +34,5 @@ console.log(user);
 // console.log('this should happen down there...');
 
 app.listen(PORT, HOST, () => {
-  console.log("App is listening on /...");
+  console.log(`App is listening on port ${PORT}...`);
 });
